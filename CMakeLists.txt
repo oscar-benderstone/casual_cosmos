@@ -71,3 +71,4 @@ endif()
 find_package(SDL3 REQUIRED CONFIG REQUIRED COMPONENTS SDL3-shared)
 
 target_link_libraries(${PROJECT_NAME} PRIVATE SDL3::SDL3)
+target_include_directories(${PROJECT_NAME} PRIVATE include)
