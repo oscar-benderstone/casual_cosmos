@@ -7,6 +7,8 @@
 > A Contributions guide and the Code of Conduct is a WIP, so please
 > wait to submit pull requests.
 
+**Dev Logs: Find them [at this repository](https://github.com/oscar-benderstone/casual_cosmos_dev_logs.git). (Blog posts coming soon!)**
+
 Welcome to Casual Cosmos, a game engine dedicated to custom casual games!
 
 ## Specification
