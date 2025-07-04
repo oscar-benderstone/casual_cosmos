@@ -1,19 +1,14 @@
 // SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception
 #include "app.h"
 #include <SDL3/SDL_init.h>
-#include <SDL3/SDL_log.h>
-// #include <SDL3_image/SDL_image.h>
-// #include <SDL3_mixer/SDL_mixer.h>
-// #include <SDL3_ttf/SDL_ttf.h>
 
 int main(int argc, char *argv[]) {
   static enum App_Status app_status = APP_CONTINUE;
+  static struct App app = {0};
 
   if (!(SDL_Init(SDL_INIT_VIDEO))) {
     app_status = APP_FAILURE;
   }
-
-  SDL_Log("Hello, Casual Cosmos!");
 
   if (app_status) {
     app_status = APP_SUCCESS;
