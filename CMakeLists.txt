@@ -13,6 +13,7 @@ include(GetSDL)
 target_include_directories(${PROJECT_NAME} PRIVATE include)
 target_sources(${EXECUTABLE_NAME}
   PRIVATE
+    src/scene.c
     src/core.c
     src/run.c
     src/main.c

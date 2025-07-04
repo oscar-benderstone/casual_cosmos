@@ -1,5 +1,4 @@
 // SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception
-
 #include "core.h"
 #include "config.h"
 #include <SDL3/SDL_init.h>
