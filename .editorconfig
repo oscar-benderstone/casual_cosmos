@@ -1,0 +1,10 @@
+root = true
+
+[*]
+charset = utf-8
+insert_final_newline = true
+# See:
+# https://adamtuttle.codes/blog/2021/tabs-vs-spaces-its-an-accessibility-issue/
+indent_style = tab
+indent_size = 2
+trim_trailing_whitespace = true
