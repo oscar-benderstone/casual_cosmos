@@ -1,6 +1,6 @@
 # Casual Cosmos
 
-> [!WARNING]
+> *Warning*
 > This project is in early development.
 > Expect breaking changes!
 >
@@ -14,7 +14,13 @@
 
 Welcome to Casual Cosmos, a game engine dedicated to custom casual games!
 
-## Specification
+## Quick Start
+- Installing: [docs/install.md](docs/install.md).
+- (Recommended) Docs: [docs](./docs)
+
+## Main Components
+
+### Specification
 
 The core config format has four main features:
 
@@ -34,18 +40,19 @@ These core features mean several things:
 - **Easy to maintain.** No need to worry about old
   or proprietary formats!
 
-See more details in [spec](./spec/README.md).
+See more details in [spec](./docs/spec/README.md).
 
 ## Credits
 Special thanks to:
-- [Entangled](https://github.com/entangled/entangled.py/). 
+
+- [Entangled](https://github.com/entangled/entangled.py/).
   - Very helpful to have tangling and detangling/stitching.
 - [SDL](https://github.com/libsdl-org/SDL) and related libraries.
 
 
 ## Licenses
 
-- [Specification](spec):
+- [Specification](docs/spec):
 
   SPDX-License-Identifier: CC0-1.0 ([LICENSE-CC0](LICENSE-CC0) or [https://creativecommons.org/publicdomain/zero/1.0/legalcode.txt](https://creativecommons.org/publicdomain/zero/1.0/legalcode.txt)).
 

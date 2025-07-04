@@ -19,10 +19,10 @@ game modes, and overall functionality.
 
 There are two key resources to consult:
 
-- The [official guide](./GUIDE.md). Best for players
+- The [official guide](/guide.md). Best for players
   or people who want to quickly edit the config format.
   - Included in the game (TBA).
-- The semi-formal [specification](./SPEC.md). This is useful for maintainers
+- The semi-formal [specification](./spec.md). This is useful for maintainers
   of the official program or alternative implementations.
   (Still handy for board games!).
   - Only available in this repository.

@@ -8,7 +8,7 @@ a simple script to convert
 the corresponding TOML into
 the C header?
 
-``` c tangle:include/config.h
+``` c {.c file=include/config.h}
 // SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception
 
 #ifndef APP_CONFIG

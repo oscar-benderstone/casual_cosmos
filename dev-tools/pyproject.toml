@@ -10,6 +10,7 @@ python = "^3.13"
 mkdocs = "^1.6.1"
 entangled-cli = "^2.1.13"
 mkdocs-entangled-plugin = "^0.4.0"
+mkdocs-material = "^9.6.15"
 
 
 [build-system]
