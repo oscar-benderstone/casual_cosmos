@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception
 #include "app.h"
 #include "core.h"
+#include "run.h"
 #include <SDL3/SDL_init.h>
 #include <SDL3/SDL_log.h>
 
@@ -42,7 +43,7 @@ int main(int argc, char *argv[]) {
   }
 
   if (app_status) {
-    SDL_Log("Hello, Casual Cosmos!");
+    app_status = app_run(&app);
   }
 
   for (int i = sizeof(managers) / sizeof(managers[0]) - 1; i >= 0; i--) {

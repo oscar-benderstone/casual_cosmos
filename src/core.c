@@ -5,7 +5,7 @@
 #include <SDL3/SDL_init.h>
 
 static inline bool init_core(const struct App_Core *core) {
-  return (SDL_Init(app_sdl_init_flags));
+  return SDL_Init(app_sdl_init_flags);
 }
 
 static inline void quit_core(const struct App_Core *core) { SDL_Quit(); }
@@ -20,12 +20,11 @@ static inline void del_window(struct App_Core *core) {
 }
 
 static inline bool new_renderer(struct App_Core *core) {
-  return (core->window = SDL_CreateWindow(app_title, app_window_width,
-                                          app_window_height, app_window_flags));
+  return (core->renderer = SDL_CreateRenderer(core->window, NULL));
 }
 
 static void del_renderer(struct App_Core *core) {
-  SDL_DestroyWindow(core->window);
+  SDL_DestroyRenderer(core->renderer);
 }
 
 // TODO: use manager iteration idiom here
