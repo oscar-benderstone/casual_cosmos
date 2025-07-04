@@ -1,4 +1,4 @@
-# casual_cosmos
+# Casual Cosmos
 
 > [!WARNING]
 > This project is in early development.
@@ -7,7 +7,10 @@
 > A Contributions guide and the Code of Conduct is a WIP, so please
 > wait to submit pull requests.
 
+
 **Dev Logs: Find them [at this repository](https://github.com/oscar-benderstone/casual_cosmos_dev_logs.git). (Blog posts coming soon!)**
+
+[![Entangled badge](https://img.shields.io/badge/entangled-Use%20the%20source!-%2300aeff)](https://entangled.github.io/)
 
 Welcome to Casual Cosmos, a game engine dedicated to custom casual games!
 
@@ -32,6 +35,13 @@ These core features mean several things:
   or proprietary formats!
 
 See more details in [spec](./spec/README.md).
+
+## Credits
+Special thanks to:
+- [Entangled](https://github.com/entangled/entangled.py/). 
+  - Very helpful to have tangling and detangling/stitching.
+- [SDL](https://github.com/libsdl-org/SDL) and related libraries.
+
 
 ## Licenses
 

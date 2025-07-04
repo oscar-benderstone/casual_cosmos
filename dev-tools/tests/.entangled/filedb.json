@@ -1,0 +1,25 @@
+{
+  "files": [
+    {
+      "deps": [],
+      "hexdigest": "bdcffcda17397fb04a23555634909eb173074ba91e6da57847d60e9781058ffa",
+      "modified": "2025-07-04T16:09:14.765554",
+      "path": "basic.md",
+      "size": 93
+    },
+    {
+      "deps": [
+        "basic.md"
+      ],
+      "hexdigest": "bf3ccb8e3140b5f9106f47e99f807ee631f5f3516045fda626c464633aaedf87",
+      "modified": "2025-07-04T16:09:04.293519",
+      "path": "src/main.c",
+      "size": 96
+    }
+  ],
+  "source": [],
+  "target": [
+    "src/main.c"
+  ],
+  "version": "2.1.13"
+}
