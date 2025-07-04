@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception
 #include "app.h"
+#include "array.h"
 #include "core.h"
 #include "run.h"
-#include <SDL3/SDL_init.h>
 #include <SDL3/SDL_log.h>
 
 // Key structure that holds
@@ -20,8 +20,8 @@ struct Manager {
 // these in core.h.
 // Main problem: circular reference!
 // TODO: maybe add enum App_Status to new instead of using bool?
-bool app_new_core(struct App *app) { return new_core(&app->core); };
-void app_del_core(struct App *app) { del_core(&app->core); };
+static bool app_new_core(struct App *app) { return new_core(&app->core); };
+static void app_del_core(struct App *app) { del_core(&app->core); };
 
 int main(int argc, char *argv[]) {
   static enum App_Status app_status = APP_CONTINUE;
@@ -34,19 +34,19 @@ int main(int argc, char *argv[]) {
   static struct Manager managers[] = {
       {.new = app_new_core, .del = app_del_core}};
 
-  for (int i = 0; i < sizeof(managers) / sizeof(managers[0]); i++) {
+  for (int i = 0; i <= ARRAY_TOP(managers); i++) {
     if (!(app_status = managers[i].new(&app))) {
       SDL_LogError(SDL_LOG_CATEGORY_ERROR, "error while initing SDL: %s",
                    SDL_GetError());
       break;
-    };
+    }
   }
 
   if (app_status) {
     app_status = app_run(&app);
   }
 
-  for (int i = sizeof(managers) / sizeof(managers[0]) - 1; i >= 0; i--) {
+  for (int i = ARRAY_TOP(managers); i >= 0; i--) {
     managers[i].del(&app);
   }
 
